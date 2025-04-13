@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmostradoScript - A linguagem pernambucana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AmostradoScript</h1>
+        <p>Escreva seu código pernambucano abaixo:</p>
+        <textarea id="codeInput" rows="10" cols="50">
+oxe
+    mostra 'AmostradoScript tá no ar!'
+cabô
+        </textarea>
+        <br>
+        <button onclick="runCode()">Bora executar!</button>
+        <h2>Resultado:</h2>
+        <div id="output"></div>
+    </div>
+
+    <footer class="legend">
+        <div class="container">
+            <h3>Guia do AmostradoScript</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Palavra</th>
+                        <th>Comando</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>oxe</td>
+                        <td>Inicia o programa</td>
+                        <td><code>oxe</code></td>
+                    </tr>
+                    <tr>
+                        <td>cabô</td>
+                        <td>Finaliza o programa</td>
+                        <td><code>cabô</code></td>
+                    </tr>
+                    <tr>
+                        <td>mostra</td>
+                        <td>Exibe uma mensagem na tela</td>
+                        <td><code>mostra 'Oi, Pernambuco!'</code></td>
+                    </tr>
+                    <tr>
+                        <td>tabacudo</td>
+                        <td>Atribui um valor a uma variável</td>
+                        <td><code>tabacudo idade é 25</code></td>
+                    </tr>
+                    <tr>
+                        <td>homi</td>
+                        <td>Verifica uma condição (if)</td>
+                        <td><code>homi idade > 18 então mostra 'Maior de idade fuleiro!'</code></td>
+                    </tr>
+                    <tr>
+                        <td>arrudeia</td>
+                        <td>Repete o próximo comando N vezes</td>
+                        <td><code>arrudeia 3<br>    mostra 'Gabiru!'</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
