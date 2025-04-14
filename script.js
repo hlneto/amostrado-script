@@ -17,8 +17,12 @@ function runCode() {
             } else if (line === 'cabô') {
                 break;
             } else if (line.startsWith('mostra ')) {
-                let value = line.replace('mostra ', '').replace(/['"]/g, '');
-                output.push(value);
+                let value = line.replace('mostra ', '').trim();
+                if (!value.startsWith("'") && !value.startsWith('"') && variables[value]) {
+                    output.push(variables[value]);
+                } else {
+                    output.push(value.replace(/['"]/g, '')); 
+                }
             } else if (line.startsWith('tabacudo ')) {
                 let parts = line.replace('tabacudo ', '').split(' é ');
                 let varName = parts[0].trim();
